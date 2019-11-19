@@ -1,7 +1,7 @@
 .main-footer {
   background-color: #15381A;
   width: 100%;
-  height: 250px;
+  height: 320px;
   padding-top: 50px;
 }
 .main-footer p {
@@ -24,6 +24,51 @@
 .main-footer li:hover {
   color: #A07426;
   font-weight: 700;
+}
+.main-footer .col-md-4 img {
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+.main-footer .col-md-4 .side {
+  width: 72%;
+  margin-top: 15px;
+  height: 60px;
+  padding-left: 20px;
+}
+.main-footer .col-md-4 .side h4 {
+  color: #f7f7f7;
+  font-size: 15px;
+}
+.main-footer .col-md-4 .side h4 i {
+  color: #32723B;
+  margin-right: 10px;
+}
+.main-footer .col-md-4 .social {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(50, 114, 59, 0.5);
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.main-footer .col-md-4 .social h3 {
+  color: #32723B;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.main-footer .col-md-4 .social .fab {
+  font-size: 25px;
+  color: #f7f7f7;
+}
+.main-footer .col-md-4 .social .fab:hover {
+  color: #A07426;
+}
+.main-footer .col-md-4 .social .shift {
+  margin-left: 18px;
+}
+.main-footer .col-md-4 span {
+  color: #f7f7f7;
+  font-size: 14px;
 }
 .main-footer .col-md-3 .contact_1 {
   margin-top: 20px;
@@ -61,19 +106,39 @@ section {
 section .super-header {
   width: 100%;
   height: 30px;
+  padding-top: 5px;
   background-color: #32723B;
 }
 section .super-header .container {
   color: #f7f7f7;
 }
-section .super-header .container .log {
-  width: 20%;
+section .super-header .container .left li {
+  list-style: none;
+  float: left;
+  font-size: 12px;
 }
-section .super-header .container .log float:right p {
+section .super-header .container .left li i {
+  font-size: 15px;
+  float: left;
+}
+section .super-header .container .left li .fa-phone, section .super-header .container .left li .fa-envelope {
+  font-size: 11px;
+}
+section .super-header .container .left li p {
+  margin-top: 0;
+}
+section .super-header .container .left .shit {
+  margin-left: 15px;
+}
+section .super-header .container .right li {
   float: right;
+  list-style: none;
+  font-weight: 700;
+  font-size: 13px;
 }
-section .super-header .container .log float:right p a {
+section .super-header .container .right li a {
   color: #f7f7f7;
+  margin-left: 15px;
 }
 section header {
   background-color: #E6E6E6;
@@ -264,6 +329,18 @@ section header ul .next_one {
   color: #4E4730;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.member .text h1:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  width: 25%;
+  background: #4E4730;
 }
 .member .text p {
   font-size: 15px;
@@ -335,6 +412,18 @@ section header ul .next_one {
 .cover .latest h1 {
   text-align: center;
   font-weight: 700;
+  position: relative;
+}
+.cover .latest h1:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 15%;
+  background: #4E4730;
 }
 .cover .latest .new {
   width: 100%;
@@ -407,6 +496,18 @@ section header ul .next_one {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 27px;
+  position: relative;
+}
+.council .mx-auto h1:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 15%;
+  background: #f7f7f7;
 }
 .council .mx-auto p {
   font-size: 14px;
@@ -461,6 +562,18 @@ section header ul .next_one {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 27px;
+  position: relative;
+}
+.Coorperate h1:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 10%;
+  background: #4E4730;
 }
 .Coorperate p a {
   color: #32723B;

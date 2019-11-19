@@ -3,7 +3,7 @@
 .main-footer{
     background-color:$button-and-footer-color;
     width:100%;
-    height:250px;
+    height:320px;
     padding-top: 50px;
     p{
         font-weight:500;
@@ -25,6 +25,53 @@
       li:hover{
         color:$gold;
           font-weight: 700;
+    }
+    .col-md-4{
+        img{
+            width:70px;
+            height:70px;
+            float:left;
+        }
+       .side{
+           width:72%;
+           margin-top:15px;
+           height:60px;
+           padding-left:20px;
+        h4{
+            color:#f7f7f7;
+            font-size:15px;
+            i{
+                color:$light-green;
+                margin-right:10px;
+            }
+        }
+       }
+       .social{
+           width:100%;
+           height:80px;
+           border-bottom: 1px solid rgba($light-green, 0.5);
+           margin-top:20px;
+           margin-bottom: 15px;;
+           h3{
+               color:$light-green;
+               font-size:16px;
+               margin-bottom:10px;
+           }
+           .fab{
+               font-size:25px;
+               color:#f7f7f7
+           }
+           .fab:hover{
+               color:$gold;
+           }
+           .shift{
+               margin-left: 18px;;
+           }
+       }
+       span{
+           color:#f7f7f7;
+           font-size:14px;
+       }
     }
  
     .col-md-3{

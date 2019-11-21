@@ -80,7 +80,42 @@
   height: 15px;
   width: 15px;
 }
-
+@media only screen and (max-width: 320px) {
+  .main-footer {
+    height: 700px;
+    padding-top: 30px;
+  }
+  .main-footer .col-md-4 img {
+    height: 50px;
+    width: 50px;
+  }
+  .main-footer .col-md-4 .side {
+    width: 85%;
+    margin-top: 5px;
+  }
+  .main-footer .col-md-4 .side h4 {
+    font-size: 13px;
+  }
+  .main-footer .col-md-4 .social {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main-footer .col-md-4 .social h3 {
+    font-size: 14px;
+  }
+  .main-footer .col-md-4 .social .fab {
+    font-size: 20px;
+  }
+  .main-footer .col-md-4 span {
+    display: none;
+  }
+  .main-footer .col-md-3, .main-footer .col-md-2 {
+    margin-top: 20px;
+  }
+  .main-footer .col-md-3 p, .main-footer .col-md-2 p {
+    margin-bottom: 5px;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -89,83 +124,175 @@ body, html {
   width: 100%;
   height: 100%;
   padding: 0;
+  position: relative;
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
 
-section {
-  height: 100%;
-  position: relative;
-  overflow-y: hidden;
+.modal-content {
   width: 100%;
-  background-size: cover;
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Re1556893909.jpg);
-  background-position: center;
-  background-attachment: fixed;
+  height: 100%;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  background-color: #fff;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
 }
-section .super-header {
+.modal-content .head {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid rgba(78, 71, 48, 0.4);
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.modal-content .head i {
+  float: right;
+  color: #A07426;
+  font-size: 18px;
+}
+.modal-content .panel-group {
+  width: 100%;
+}
+.modal-content .panel-group .panel-heading {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(78, 71, 48, 0.4);
+  transition: 0.2s ease-in;
+}
+.modal-content .panel-group .panel-heading a {
+  color: #000;
+}
+.modal-content .panel-group .panel-heading a h4 {
+  font-size: 17px;
+  margin: 0;
+  font-weight: 700;
+}
+.modal-content .panel-group .panel-heading i {
+  float: right;
+  color: #32723B;
+  cursor: pointer;
+}
+.modal-content .panel-group .panel-heading a:hover {
+  text-decoration: none;
+}
+.modal-content .panel-group .panel-collapse {
+  font-size: 13px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+.modal-content .panel-group .panel-collapse p {
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.modal-content .panel-group .panel-collapse li {
+  list-style: none;
+}
+.modal-content .panel-group .panel-collapse li a {
+  color: #32723B;
+}
+.modal-content .panel-group .panel-collapse li a:hover {
+  text-decoration: none;
+}
+.modal-content .panel-group .panel-collapse li:hover {
+  font-weight: 700;
+}
+.modal-content h2 {
+  color: #4E4730;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.modal-content .quick {
+  padding-left: 15px;
+}
+.modal-content .quick li {
+  list-style: none;
+  margin-top: 10px;
+}
+.modal-content .quick li a {
+  color: #32723B;
+}
+
+.super-header {
   width: 100%;
   height: 30px;
   padding-top: 5px;
   background-color: #32723B;
 }
-section .super-header .container {
+.super-header .container {
   color: #f7f7f7;
 }
-section .super-header .container .left li {
+.super-header .container .left li {
   list-style: none;
   float: left;
   font-size: 12px;
 }
-section .super-header .container .left li i {
+.super-header .container .left li i {
   font-size: 15px;
   float: left;
 }
-section .super-header .container .left li .fa-phone, section .super-header .container .left li .fa-envelope {
+.super-header .container .left li .fa-phone, .super-header .container .left li .fa-envelope {
   font-size: 11px;
 }
-section .super-header .container .left li p {
+.super-header .container .left li p {
   margin-top: 0;
 }
-section .super-header .container .left .shit {
+.super-header .container .left .shit {
   margin-left: 15px;
 }
-section .super-header .container .right li {
+.super-header .container .right li {
   float: right;
   list-style: none;
   font-weight: 700;
   font-size: 13px;
 }
-section .super-header .container .right li a {
+.super-header .container .right li a {
   color: #f7f7f7;
   margin-left: 15px;
 }
-section header {
+@media only screen and (max-width: 320px) {
+  .super-header {
+    display: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .super-header {
+    display: none;
+  }
+}
+
+header {
   background-color: #E6E6E6;
   height: 70px;
   color: #f0f0f0;
   padding: 10px 15px 0 15px;
   transition: 0.2s ease-in;
 }
-section header .logo {
+header .logo {
   padding-top: 0px;
 }
-section header .logo .main {
+header .logo .main {
   height: 30px;
   width: 30px;
   float: left;
   margin-right: 20px;
   animation: tada 1s ease-in 2s 1 normal forwards;
 }
-section header .logo .main img {
+header .logo .main img {
   height: 50px;
   width: 50px;
 }
-section header .logo .tex {
+header .logo .tex {
   margin-left: 20px;
   margin-top: 10px;
 }
-section header .logo .tex h3 {
+header .logo .tex h3 {
   font-size: 11px;
   color: #000;
   font-weight: 700;
@@ -197,29 +324,84 @@ section header .logo .tex h3 {
     transform: scale3d(1, 1, 1);
   }
 }
-section header .col-md-3, section header .col-md-9 {
+header .logo i {
+  display: none !important;
+  color: #000;
+  float: right;
+}
+header .col-md-3, header .col-md-9 {
   padding-left: 0;
   padding-right: 0;
 }
-section header ul {
+header ul {
   padding-left: 0;
   margin-top: 15px;
 }
-section header ul li {
+header ul li {
   list-style: none;
   float: left;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
 }
-section header ul li a {
+header ul li a {
   color: #000;
 }
-section header ul li img {
+header ul li img {
   margin-left: 5px;
 }
-section header ul .next_one {
+header ul li a:hover {
+  text-decoration: none;
+  color: #A07426;
+}
+header ul .next_one {
   padding-left: 18px;
+}
+@media only screen and (max-width: 320px) {
+  header .logo .main {
+    margin-right: 0;
+  }
+  header .logo .main img {
+    width: 40px;
+    height: 40px;
+  }
+  header .logo .tex {
+    width: 70%;
+    float: left;
+  }
+  header .logo .tex h3 {
+    font-size: 8px;
+    display: inline-block;
+  }
+  header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  header ul li {
+    display: none;
+  }
+}
+section {
+  height: 560px;
+  position: relative;
+  overflow-y: hidden;
+  width: 100%;
+  background-size: cover;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Re1556893909.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 320px) {
+  section {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  section {
+    height: 400px;
+  }
 }
 
 .caption {
@@ -279,6 +461,28 @@ section header ul .next_one {
 .caption button:hover {
   color: #A07426;
 }
+@media only screen and (max-width: 320px) {
+  .caption {
+    padding-top: 70px;
+  }
+  .caption .caption_text {
+    width: 90%;
+  }
+  .caption .caption_text h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .caption {
+    padding-top: 100px;
+  }
+  .caption .caption_text {
+    width: 90%;
+  }
+  .caption .caption_text h1 {
+    font-size: 40px;
+  }
+}
 
 .bot {
   width: 100%;
@@ -318,6 +522,16 @@ section header ul .next_one {
 .bot .container ul li:hover span {
   display: block;
 }
+@media only screen and (max-width: 320px) {
+  .bot {
+    display: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .bot {
+    display: none;
+  }
+}
 
 .member {
   padding: 60px 0;
@@ -326,7 +540,7 @@ section header ul .next_one {
   margin: 0;
 }
 .member .text h1 {
-  color: #4E4730;
+  color: #000;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -376,15 +590,15 @@ section header ul .next_one {
 }
 .member .images .first-div {
   float: right;
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   background-image: url(images/GettyImages-557476185.jpg);
   background-size: cover;
 }
 .member .images .second-div {
   position: absolute;
-  width: 230px;
-  height: 150px;
+  width: 280px;
+  height: 200px;
   background-image: url(images/GettyImages-180406407.jpg);
   background-size: cover;
   border: 8px solid #fff;
@@ -394,14 +608,64 @@ section header ul .next_one {
 .member .images .third {
   margin-right: -60px;
   margin-top: 50px;
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   z-index: 9999;
   background-image: url(images/GettyImages-76132133.jpg);
   background-size: cover;
   background-position: bottom;
   float: right;
   border: 8px solid #fff;
+}
+@media only screen and (max-width: 320px) {
+  .member {
+    padding: 30px 0;
+  }
+  .member .row .text h1 {
+    font-size: 17px;
+  }
+  .member .row .text p {
+    font-size: 11px;
+  }
+  .member .row .text button {
+    width: 100px;
+    height: 2.7em;
+    font-size: 11px;
+  }
+  .member .row .text h6 {
+    margin-top: 18px;
+  }
+  .member .row .text h6 a {
+    font-size: 11px;
+  }
+  .member .images {
+    display: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .member {
+    padding: 40px 0;
+  }
+  .member .row .text h1 {
+    font-size: 19px;
+  }
+  .member .row .text p {
+    font-size: 13px;
+  }
+  .member .row .text button {
+    width: 110px;
+    height: 3em;
+    font-size: 11px;
+  }
+  .member .row .text h6 {
+    margin-top: 20px;
+  }
+  .member .row .text h6 a {
+    font-size: 11px;
+  }
+  .member .images {
+    display: none;
+  }
 }
 
 .cover {
@@ -418,7 +682,7 @@ section header ul .next_one {
   position: absolute;
   content: "";
   height: 1px;
-  top: 50px;
+  bottom: -4px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -480,7 +744,18 @@ section header ul .next_one {
 .cover .latest .new .shi {
   margin-left: 1%;
 }
-
+@media only screen and (max-width: 320px) {
+  .cover .latest h1 {
+    font-size: 18px;
+  }
+  .cover .latest .new .inn {
+    width: 100%;
+    margin: auto;
+  }
+  .cover .latest .mob {
+    display: none;
+  }
+}
 .council {
   background-color: #302B1D;
   color: #fff;
@@ -553,6 +828,81 @@ section header ul .next_one {
   background-color: transparent;
   margin-top: 30px;
 }
+@media only screen and (max-width: 320px) {
+  .council {
+    height: 450px;
+  }
+  .council .mx-auto {
+    width: 90%;
+    padding: 30px 0;
+  }
+  .council .mx-auto h1 {
+    font-size: 17px;
+  }
+  .council .mx-auto p {
+    font-size: 11px;
+  }
+  .council .profile-div .profile {
+    width: 100%;
+  }
+  .council .profile-div .profile img {
+    height: 40px;
+    width: 40px;
+  }
+  .council .profile-div .profile .text {
+    width: 75%;
+    padding-top: 5px;
+  }
+  .council .profile-div .profile .text h3 {
+    font-size: 13px;
+  }
+  .council .profile-div .profile .text p {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .council a button {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .council {
+    height: 450px;
+  }
+  .council .mx-auto {
+    width: 85%;
+    padding: 40px 0;
+  }
+  .council .mx-auto h1 {
+    font-size: 18px;
+  }
+  .council .mx-auto p {
+    font-size: 13px;
+  }
+  .council .profile-div .profile {
+    width: 80%;
+  }
+  .council .profile-div .profile img {
+    height: 40px;
+    width: 40px;
+  }
+  .council .profile-div .profile .text {
+    width: 75%;
+    padding-top: 5px;
+  }
+  .council .profile-div .profile .text h3 {
+    font-size: 13px;
+  }
+  .council .profile-div .profile .text p {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .council a button {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}
 
 .Coorperate {
   padding: 50px 0;
@@ -588,6 +938,75 @@ section header ul .next_one {
 }
 .Coorperate .slider-nav div .slick-prev:before {
   color: #000 !important;
+}
+@media only screen and (max-width: 320px) {
+  .Coorperate h1 {
+    font-size: 18px;
+  }
+  .Coorperate .slider-nav div .mob-hide {
+    display: none;
+  }
+}
+.account, .Loan, .investor, .media, .about-us, .savings {
+  display: none;
+  width: 100%;
+  top: 100px;
+  height: auto;
+  padding-bottom: 50px;
+  position: fixed;
+  left: 0;
+  z-index: 9999;
+  background-color: #f7f7f7;
+}
+.account .container, .Loan .container, .investor .container, .media .container, .about-us .container, .savings .container {
+  border-top: 1px solid rgba(230, 230, 230, 0.4);
+}
+.account .col-md-3, .Loan .col-md-3, .investor .col-md-3, .media .col-md-3, .about-us .col-md-3, .savings .col-md-3 {
+  padding: 0;
+  text-align: left;
+  padding-top: 20px;
+  font-weight: 400;
+  color: #32723B;
+}
+.account .col-md-3 i, .Loan .col-md-3 i, .investor .col-md-3 i, .media .col-md-3 i, .about-us .col-md-3 i, .savings .col-md-3 i {
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.account .col-md-3 i:hover, .Loan .col-md-3 i:hover, .investor .col-md-3 i:hover, .media .col-md-3 i:hover, .about-us .col-md-3 i:hover, .savings .col-md-3 i:hover {
+  color: #4E4730;
+}
+.account .col-md-3 p, .Loan .col-md-3 p, .investor .col-md-3 p, .media .col-md-3 p, .about-us .col-md-3 p, .savings .col-md-3 p {
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.account .col-md-3 li, .Loan .col-md-3 li, .investor .col-md-3 li, .media .col-md-3 li, .about-us .col-md-3 li, .savings .col-md-3 li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 22px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.account .col-md-3 li a, .Loan .col-md-3 li a, .investor .col-md-3 li a, .media .col-md-3 li a, .about-us .col-md-3 li a, .savings .col-md-3 li a {
+  color: #000;
+}
+.account .col-md-3 li a:hover, .Loan .col-md-3 li a:hover, .investor .col-md-3 li a:hover, .media .col-md-3 li a:hover, .about-us .col-md-3 li a:hover, .savings .col-md-3 li a:hover {
+  text-decoration: none;
+}
+.account .col-md-3 li:hover, .Loan .col-md-3 li:hover, .investor .col-md-3 li:hover, .media .col-md-3 li:hover, .about-us .col-md-3 li:hover, .savings .col-md-3 li:hover {
+  font-weight: 600;
+}
+.account .col-md-3 img, .Loan .col-md-3 img, .investor .col-md-3 img, .media .col-md-3 img, .about-us .col-md-3 img, .savings .col-md-3 img {
+  height: 350px;
+  width: 233px;
+}
+
+.Loan p, .investor p, .media p, .about-us p, .savings p {
+  font-weight: 700;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

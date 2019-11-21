@@ -116,6 +116,43 @@
     margin-bottom: 5px;
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .main-footer {
+    height: 700px;
+    padding-top: 30px;
+  }
+  .main-footer .col-md-4 img {
+    height: 50px;
+    width: 50px;
+  }
+  .main-footer .col-md-4 .side {
+    width: 85%;
+    margin-top: 5px;
+  }
+  .main-footer .col-md-4 .side h4 {
+    font-size: 15px;
+  }
+  .main-footer .col-md-4 .social {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main-footer .col-md-4 .social h3 {
+    font-size: 14px;
+  }
+  .main-footer .col-md-4 .social .fab {
+    font-size: 22px;
+  }
+  .main-footer .col-md-4 span {
+    display: none;
+  }
+  .main-footer .col-md-3, .main-footer .col-md-2 {
+    margin-top: 20px;
+  }
+  .main-footer .col-md-3 p, .main-footer .col-md-2 p {
+    margin-bottom: 5px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -383,6 +420,33 @@ header ul .next_one {
     display: none;
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  header .logo .main {
+    margin-right: 0;
+  }
+  header .logo .main img {
+    width: 40px;
+    height: 40px;
+  }
+  header .logo .tex {
+    width: 70%;
+    float: left;
+  }
+  header .logo .tex h3 {
+    font-size: 8px;
+    display: inline-block;
+  }
+  header .logo i {
+    display: block !important;
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  header ul li {
+    display: none;
+  }
+}
+
 section {
   height: 560px;
   position: relative;
@@ -756,6 +820,19 @@ section {
     display: none;
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .cover .latest h1 {
+    font-size: 18px;
+  }
+  .cover .latest .new .inn {
+    width: 100%;
+    margin: auto;
+  }
+  .cover .latest .mob {
+    display: none;
+  }
+}
+
 .council {
   background-color: #302B1D;
   color: #fff;
@@ -865,7 +942,7 @@ section {
     font-weight: 600;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 720px) {
+@media screen and (min-width: 321px) and (max-width: 720px) {
   .council {
     height: 450px;
   }
@@ -947,6 +1024,15 @@ section {
     display: none;
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 720px) {
+  .Coorperate h1 {
+    font-size: 18px;
+  }
+  .Coorperate .slider-nav div .mob-hide {
+    display: none;
+  }
+}
+
 .account, .Loan, .investor, .media, .about-us, .savings {
   display: none;
   width: 100%;
@@ -970,7 +1056,6 @@ section {
 }
 .account .col-md-3 i, .Loan .col-md-3 i, .investor .col-md-3 i, .media .col-md-3 i, .about-us .col-md-3 i, .savings .col-md-3 i {
   float: right;
-  display: inline-block;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
